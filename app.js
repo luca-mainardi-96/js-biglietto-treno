@@ -4,13 +4,15 @@ const tratta = parseFloat(prompt("Quanti km devi percorrere?45") ) //number
 
 console.log(tratta)
 
-const eta = parseFloat(prompt("quanti anni hai?")) //number
+const eta = parseInt(prompt("quanti anni hai?")) //number
 
 console.log(eta)
 
 //definire prezzo
 
-const prezzo = (tratta*0.21).toFixed(2) //number
+const COSTO_PER_KM = 0.21
+
+const prezzo = tratta * COSTO_PER_KM //number
 
 //definire sconto
 
