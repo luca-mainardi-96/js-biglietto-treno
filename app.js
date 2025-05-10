@@ -14,11 +14,15 @@ const prezzo = tratta*0.21
 
 console.log(prezzo)
 
-
-
-
 //definire sconto
-    //sconto 20% minorenni15
+
+    //calcolo 20% minorenni
+
+const sconto20 = (prezzo*20/100)
+        
     //sconto 40% over 65
 
-//prezzo finale156
+const sconto40 = (prezzo*40/100)
+        
+
+//prezzo finale156515
