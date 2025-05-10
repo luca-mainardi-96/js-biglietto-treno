@@ -16,11 +16,11 @@ const prezzo = (tratta*0.21).toFixed(2) //number
 
     //calcolo 20% minorenni
 
-const sconto20 = (prezzo*20/100).toFixed(2) //number
+const sconto20 = parseFloat(prezzo*20/100).toFixed(2) //number
         
     //sconto 40% over 65
 
-const sconto40 = (prezzo*40/100).toFixed(2) //number
+const sconto40 = parseFloat(prezzo*40/100).toFixed(2) //number
 
     //applicazione sconto
 
