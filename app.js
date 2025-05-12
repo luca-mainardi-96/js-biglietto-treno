@@ -27,7 +27,7 @@ const sconto40 = parseFloat(prezzo*40/100) //number
     //applicazione sconto
 
 if (eta>65) {
-    console.log((prezzo-sconto40).toFixed(2)) 
+    console.log((prezzo-sconto40).toFixed(2))
 }
 
 else if(eta<18) {
@@ -37,4 +37,5 @@ else if(eta<18) {
 else {
     console.log((prezzo).toFixed(2))
 }
+
         
