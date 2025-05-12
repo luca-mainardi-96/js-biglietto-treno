@@ -1,6 +1,6 @@
 //definire domande
 
-const tratta = parseFloat(prompt("Quanti km devi percorrere?45") ) //number
+const tratta = parseFloat(prompt("Quanti km devi percorrere?") ) //number
 
 console.log(tratta)
 
@@ -18,23 +18,23 @@ const prezzo = tratta * COSTO_PER_KM //number
 
     //calcolo 20% minorenni
 
-const sconto20 = parseFloat(prezzo*20/100).toFixed(2) //number
-        
+const sconto20 = parseFloat(prezzo*20/100) //number
+
     //sconto 40% over 65
 
-const sconto40 = parseFloat(prezzo*40/100).toFixed(2) //number
-
+const sconto40 = parseFloat(prezzo*40/100) //number
+ 
     //applicazione sconto
 
 if (eta>65) {
-    console.log(prezzo-sconto40)
+    console.log((prezzo-sconto40).toFixed(2)) 
 }
 
 else if(eta<18) {
-    console.log(prezzo-sconto20)
+    console.log((prezzo-sconto20).toFixed(2))
 }
 
 else {
-    console.log(prezzo)
+    console.log((prezzo).toFixed(2))
 }
         
